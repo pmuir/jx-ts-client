@@ -18,6 +18,10 @@ import { StorageLocation } from './storageLocation';
 * TeamSettings the default settings for a team
 */
 export class TeamSettings {
+    /**
+    * AppsPrefixes is the list of prefixes for appNames
+    */
+    'appPrefixes'?: Array<string>;
     'appsRepository'?: string;
     'askOnCreate'?: boolean;
     'branchPatterns'?: string;
@@ -61,6 +65,11 @@ export class TeamSettings {
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "appPrefixes",
+            "baseName": "appPrefixes",
+            "type": "Array<string>"
+        },
         {
             "name": "appsRepository",
             "baseName": "appsRepository",
