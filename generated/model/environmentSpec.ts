@@ -26,6 +26,10 @@ export class EnvironmentSpec {
     'previewGitInfo'?: PreviewGitSpec;
     'promotionStrategy'?: string;
     'pullRequestURL'?: string;
+    /**
+    * RemoteCluster flag indicates if the Environment is deployed in a separate cluster to the Development Environment
+    */
+    'remoteCluster'?: boolean;
     'source'?: EnvironmentRepository;
     'teamSettings'?: TeamSettings;
     'webHookEngine'?: string;
@@ -72,6 +76,11 @@ export class EnvironmentSpec {
             "name": "pullRequestURL",
             "baseName": "pullRequestURL",
             "type": "string"
+        },
+        {
+            "name": "remoteCluster",
+            "baseName": "remoteCluster",
+            "type": "boolean"
         },
         {
             "name": "source",
