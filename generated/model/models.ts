@@ -133,6 +133,8 @@ export * from './ioK8sApiCoreV1VolumeMount';
 export * from './ioK8sApiCoreV1VolumeProjection';
 export * from './ioK8sApiCoreV1VsphereVirtualDiskVolumeSource';
 export * from './ioK8sApiCoreV1WeightedPodAffinityTerm';
+export * from './ioK8sApiRbacV1PolicyRule';
+export * from './ioK8sApiRbacV1Role';
 export * from './ioK8sApiRbacV1RoleRef';
 export * from './ioK8sApiRbacV1Subject';
 export * from './ioK8sApimachineryPkgApisMetaV1Initializer';
@@ -331,6 +333,8 @@ import { IoK8sApiCoreV1VolumeMount } from './ioK8sApiCoreV1VolumeMount';
 import { IoK8sApiCoreV1VolumeProjection } from './ioK8sApiCoreV1VolumeProjection';
 import { IoK8sApiCoreV1VsphereVirtualDiskVolumeSource } from './ioK8sApiCoreV1VsphereVirtualDiskVolumeSource';
 import { IoK8sApiCoreV1WeightedPodAffinityTerm } from './ioK8sApiCoreV1WeightedPodAffinityTerm';
+import { IoK8sApiRbacV1PolicyRule } from './ioK8sApiRbacV1PolicyRule';
+import { IoK8sApiRbacV1Role } from './ioK8sApiRbacV1Role';
 import { IoK8sApiRbacV1RoleRef } from './ioK8sApiRbacV1RoleRef';
 import { IoK8sApiRbacV1Subject } from './ioK8sApiRbacV1Subject';
 import { IoK8sApimachineryPkgApisMetaV1Initializer } from './ioK8sApimachineryPkgApisMetaV1Initializer';
@@ -543,6 +547,8 @@ let typeMap: {[index: string]: any} = {
     "IoK8sApiCoreV1VolumeProjection": IoK8sApiCoreV1VolumeProjection,
     "IoK8sApiCoreV1VsphereVirtualDiskVolumeSource": IoK8sApiCoreV1VsphereVirtualDiskVolumeSource,
     "IoK8sApiCoreV1WeightedPodAffinityTerm": IoK8sApiCoreV1WeightedPodAffinityTerm,
+    "IoK8sApiRbacV1PolicyRule": IoK8sApiRbacV1PolicyRule,
+    "IoK8sApiRbacV1Role": IoK8sApiRbacV1Role,
     "IoK8sApiRbacV1RoleRef": IoK8sApiRbacV1RoleRef,
     "IoK8sApiRbacV1Subject": IoK8sApiRbacV1Subject,
     "IoK8sApimachineryPkgApisMetaV1Initializer": IoK8sApimachineryPkgApisMetaV1Initializer,
