@@ -10,23 +10,28 @@
  * Do not edit the class manually.
  */
 
+import { IoK8sApiCoreV1Container } from './ioK8sApiCoreV1Container';
+import { IoK8sApiRbacV1Role } from './ioK8sApiRbacV1Role';
 
 /**
 * AppSpec provides details of the metadata for an App
 */
 export class AppSpec {
-    /**
-    * A list of services that this App exposes
-    */
-    'exposedServices'?: Array<string>;
+    'schemaPreprocessor'?: IoK8sApiCoreV1Container;
+    'schemaPreprocessorRole'?: IoK8sApiRbacV1Role;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "exposedServices",
-            "baseName": "exposedServices",
-            "type": "Array<string>"
+            "name": "schemaPreprocessor",
+            "baseName": "schemaPreprocessor",
+            "type": "IoK8sApiCoreV1Container"
+        },
+        {
+            "name": "schemaPreprocessorRole",
+            "baseName": "schemaPreprocessorRole",
+            "type": "IoK8sApiRbacV1Role"
         }    ];
 
     static getAttributeTypeMap() {
