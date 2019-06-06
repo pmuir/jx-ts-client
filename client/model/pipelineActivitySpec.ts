@@ -11,6 +11,7 @@
  */
 
 import { Attachment } from './attachment';
+import { BatchPipelineActivity } from './batchPipelineActivity';
 import { ExtensionExecution } from './extensionExecution';
 import { PipelineActivityStep } from './pipelineActivityStep';
 
@@ -20,6 +21,7 @@ import { PipelineActivityStep } from './pipelineActivityStep';
 export interface PipelineActivitySpec {
     'attachments'?: Array<Attachment>;
     'author'?: string;
+    'batchPipelineActivity'?: BatchPipelineActivity;
     'build'?: string;
     'buildLogsUrl'?: string;
     'buildUrl'?: string;
@@ -61,6 +63,11 @@ export interface PipelineActivitySpec {
             "name": "author",
             "baseName": "author",
             "type": "string"
+        },
+        {
+            "name": "batchPipelineActivity",
+            "baseName": "batchPipelineActivity",
+            "type": "BatchPipelineActivity"
         },
         {
             "name": "build",
